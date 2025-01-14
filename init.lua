@@ -20,5 +20,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require 'lazy-plugins'
+vim.cmd.colorscheme 'nord'
+vim.cmd.hi 'Comment gui=none'
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
