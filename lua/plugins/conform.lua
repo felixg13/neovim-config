@@ -35,8 +35,8 @@ return {
         lua = { 'stylua' },
         c = { 'clangd' },
         cpp = { 'clangd' },
-        -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
+        python = { 'ruff_fix', 'ruff_organize_import', 'ruff_format' },
+        bash = { 'shellharden' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
