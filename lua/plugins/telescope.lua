@@ -32,6 +32,8 @@ return { -- Fuzzy Finder (files, lsp, etc)
       defaults = {
         file_ignore_patterns = {
           'node_modules',
+          'flask_venv',
+          '__pycache__',
         },
         --   mappings = {
         --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
