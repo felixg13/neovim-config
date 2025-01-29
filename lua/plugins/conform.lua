@@ -36,7 +36,7 @@ return {
         c = { 'clangd' },
         cpp = { 'clangd' },
         python = { 'ruff_fix', 'ruff_organize_import', 'ruff_format' },
-        bash = { 'shellharden' },
+        sh = { 'shellharden' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },

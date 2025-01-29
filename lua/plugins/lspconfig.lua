@@ -151,6 +151,8 @@ return {
       --  - capabilities (table): Override fields in capabilities. Can be used to disable certain LSP features.
       --  - settings (table): Override the default settings passed when initializing the server.
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
+      --
+      --    JUMP HERE FOR LSPS
       local servers = {
         clangd = {
           cmd = { 'clangd' },
@@ -163,10 +165,22 @@ return {
           },
         },
         gopls = {},
-        pyright = {},
+        pyright = {
+          settings = {
+            python = {
+              analysis = {
+                typeCheckingMode = 'basic',
+                reportUntypedFunctionDecorator = 'none',
+              },
+            },
+          },
+        },
         ruff = {},
         rust_analyzer = {},
         bashls = {},
+        shellharden = {},
+        -- lemminx = {},
+        -- xmlformatter = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
