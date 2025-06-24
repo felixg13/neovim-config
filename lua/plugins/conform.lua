@@ -37,6 +37,8 @@ return {
         cpp = { 'clangd' },
         python = { 'ruff_fix', 'ruff_organize_import', 'ruff_format' },
         sh = { 'shellharden' },
+        xml = { 'lemminx' },
+        cmake = { 'cmake-format' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
