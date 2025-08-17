@@ -9,6 +9,11 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Keep signcolumn on by default
+vim.opt.signcolumn = 'yes'
+
+vim.opt.wrap = false
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = ''
 
@@ -32,9 +37,6 @@ vim.opt.undofile = true
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
--- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -60,6 +62,8 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 20
+
+vim.opt.winborder = 'rounded'
 
 -- vim: ts=2 sts=2 sw=2 et
