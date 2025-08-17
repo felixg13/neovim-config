@@ -24,7 +24,7 @@ local function switch_source_header(bufnr)
       error(tostring(err))
     end
     if not result then
-      vim.notify('corresponding file cannot be determined')
+      vim.notify 'corresponding file cannot be determined'
       return
     end
     vim.cmd.edit(vim.uri_to_fname(result))
