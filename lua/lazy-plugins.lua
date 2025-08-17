@@ -7,7 +7,6 @@ require('lazy').setup({
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
   require 'plugins.which-key',
   require 'plugins.telescope',
-  require 'plugins.lspconfig',
   require 'plugins.cmp',
   require 'plugins.mini',
   require 'plugins.treesitter',
