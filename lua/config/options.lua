@@ -66,4 +66,5 @@ vim.opt.scrolloff = 20
 
 vim.opt.winborder = 'rounded'
 
+vim.opt.background = 'dark'
 -- vim: ts=2 sts=2 sw=2 et
