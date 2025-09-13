@@ -10,6 +10,7 @@ local server = {
   'slangd',
 }
 
+-- Auto trigger completion list or <ctrl-x,ctrl-o> to manually trigger completion list
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
@@ -18,5 +19,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
+
+-- Don't select first of completion list automatically
+vim.cmd 'set completeopt+=noselect'
 
 vim.lsp.enable(server)
