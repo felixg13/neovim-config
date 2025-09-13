@@ -2,6 +2,8 @@ local fzf = require 'fzf-lua'
 
 fzf.setup {
   files = {
+    git_icons = true,
+    git_ignore = true,
     fd_opts = [[--color=never --hidden --follow --exclude .git --exclude .obsidian --type f]],
   },
 }
