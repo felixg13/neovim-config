@@ -7,6 +7,7 @@ local server = {
   'clangd',
   'cmake',
   'glsl_analyzer',
+  'rust_analyzer',
   'slangd',
 }
 
