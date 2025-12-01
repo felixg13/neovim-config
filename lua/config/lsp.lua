@@ -11,6 +11,7 @@ local server = {
 }
 
 -- Auto trigger completion list or <ctrl-x,ctrl-o> to manually trigger completion list
+-- <ctrl-p> to go to previous in list, <ctrl-n> to go to next in list
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
