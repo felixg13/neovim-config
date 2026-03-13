@@ -2,6 +2,7 @@ local server = {
   'bashls',
   'hyprls',
   'lua_ls',
+  'vhdl_ls',
   'marksman',
   'ruff',
   'clangd',
