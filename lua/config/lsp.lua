@@ -1,15 +1,8 @@
 local server = {
   'bashls',
-  'hyprls',
-  'lua_ls',
-  'vhdl_ls',
   'marksman',
-  'ruff',
   'clangd',
   'cmake',
-  'glsl_analyzer',
-  'rust_analyzer',
-  'slangd',
 }
 
 -- Auto trigger completion list or <ctrl-x,ctrl-o> to manually trigger completion list

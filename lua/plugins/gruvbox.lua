@@ -1,11 +1,5 @@
-return {
-  'ellisonleao/gruvbox.nvim',
-  priority = 1000,
-  opts = {
-    contrast = 'soft',
-    transparent_mode = false,
-  },
-  init = function()
-    vim.cmd 'colorscheme gruvbox'
-  end,
+require('gruvbox').setup {
+  contrast = 'soft',
+  transparent_mode = false,
 }
+vim.cmd 'colorscheme gruvbox'

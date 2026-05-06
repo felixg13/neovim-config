@@ -2,7 +2,7 @@ require 'config.options'
 require 'config.globals'
 require 'config.keymaps'
 require 'config.autocmd'
-require 'config.lazy'
+require 'config.pack'
 require 'config.lsp'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
