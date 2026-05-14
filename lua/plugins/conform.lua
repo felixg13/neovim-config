@@ -66,7 +66,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
 
 local cycle = { off = 'hunks', hunks = 'all', all = 'off' }
 
-vim.api.nvim_create_user_command('FormatToggle', function()
+vim.api.nvim_create_user_command('FormatStyle', function()
   local next = cycle[vim.g.conform_save_mode] or 'hunks'
   vim.g.conform_save_mode = next
   vim.notify('Format on save: ' .. next, vim.log.levels.INFO, { title = 'Conform' })
