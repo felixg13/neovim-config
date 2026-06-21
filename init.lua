@@ -31,6 +31,12 @@ end)
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Default indentation: 2 spaces, no real tabs
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -68,12 +74,12 @@ vim.opt.winborder = 'rounded'
 
 vim.opt.background = 'dark'
 
+vim.opt.exrc = true
 vim.diagnostic.config {
   virtual_lines = {
     current_line = true,
   },
 }
-
 -- Globals
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -97,6 +103,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- Auto trigger completion list or <ctrl-x,ctrl-o> to manually trigger completion list
 -- <ctrl-p> to go to previous in list, <ctrl-n> to go to next in list
+vim.opt.completeopt = { 'menuone', 'noinsert', 'noselect', 'fuzzy' }
+vim.opt.pumheight = 10
+
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(ev)
     local client = vim.lsp.get_client_by_id(ev.data.client_id)
